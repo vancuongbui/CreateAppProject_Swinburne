@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Description" content="Assignment 3 - Web Application"/>
+        <meta name="keywords" content="HTML, CSS, JavaScript"/>
+        <meta name="author" content="Van Cuong Bui"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Assignment 3</title>
+        <link rel="stylesheet" href="styles/styles.css"/>
+        <link rel="stylesheet" href="styles/styles.css" media="screen and (max-width:720px)"/>
+        <script type="text/javascript" src="scripts/enhancement.js"></script>
+        <!--<script type="text/javascript" src="scripts/apply.js"></script>-->
+        <!--<script type="text/javascript" src="apply.js"></script>-->
+    </head>
+    <body id="jobs">
+        <!--Area0: for logo, search and courses-->
+        <header id="header">
+            <div id="top_panel">
+                <div id="logo">
+                    <img src="images/logo.png" alt="Ulearn Logo"/>
+                </div>
+                <div class="top_panel">
+                    <label for="search" class="search">&#160;&#160;&#160; Search
+                        <input type="search" name="search" id="search"/>
+                    </label>
+                    <div class="top_item">
+                        <label class="course_login">
+                            <select>
+                                <option value="0" selected="selected">Courses </option>
+                                <option value="c1">Course 1</option>
+                                <option value="c2">Course 2</option>
+                                <option value="c3">Course 3</option>
+                                <option value="c4">Course 4</option>
+                                <option value="c5">Course 5</option>
+                                <option value="c6">Course 6</option>
+                                <option value="c7">Course 7</option>
+                            </select>
+                        </label>
+                        
+                        <label class="course_login"><a href="default.html">Login</a></label>
+                    </div>
+                </div>
+            </div>
+            <!--Area1: for menues: Home, Blog, Career, About-->
+            <nav id="nav">
+                <div class="menu" id="menu">
+                    
+                    <a href="index.html" class="hover">Home</a>
+                    <a href="default.html" class="hover">Courses</a>
+                    <a href="default.html" class="hover">Students</a>
+                    <a href="default.html" class="hover">instructors</a>
+                    <a href="default.html" class="hover">Blog</a>
+                    <a href="jobs.html" class="hover">Jobs</a>
+                    <a href="apply.html" class="hover">Job Apply</a>
+                    <a href="about.html" class="hover">About</a>
+                   
+                </div>
+                <div id="slogan">
+                    <h1>Larn your way at Ulearn.</h1>  
+                </div>              
+            </nav>
+        </header> 
+        <!--Section 1 part
+            source of information: https://about.udemy.com/-->
+<div class="container">
+    <div class="main_container">
+        <section class="apply_container">
+            <h3>Manager required to login.</h3>
+                <form class="form" id="applyForm" action="login.php" method="post" novalidate="novalidate">
+                                                                                                        
+                <!--<div class="personal_container">-->
+                    <fieldset>
+                        <legend>Login detail</legend>   
+                        <div class="personal_item">                             
+                            <p class="form_item"><label for="username" >Username</label>
+                                    <input type="text" name="username" id="username" pattern="[a-zA-Z0-9]+" maxlength="20" 
+                                    required="required"/></p>
+                            <p class="form_item"><label for="password" >password</label>
+                                    <input type="text" name="password" id="password" maxlength="20"
+                                    required="required"/></p>
+                        </div>
+                            
+                        <div class="submit">     
+                            <input type="submit" value="Login" class="buttons" name="login"/>
+                            <input type="reset" value="Reset"   class="buttons"/>                
+                        </div>
+                    </fieldset>                       
+
+                </form>
+        </section>
+    </div>
+
+        <aside class="asideContainer">
+                
+                    <div class="item">
+                        <h2><a href="http://www.bbc.co.uk/learningenglish/english/features/6-minute-english">
+                             English Lishtening</a></h2>
+                        <audio controls="controls">                        
+                            <source src="audio/englishListening.mp3" type="audio/mpeg"/>
+                            English Listening.
+                        </audio> 
+                    </div>
+                    <hr />                    
+                    <div class="item">
+                            <h2> Job opportunities</h2>
+                            <ul>
+                                <li><a href="jobs.html#network_admin">Network Administrator</a></li>
+                                <li><a href="jobs.html#web_design"> Web designer</a></li>
+                                <li><a href="jobs.html#data_admin">Database Administrator</a></li>
+                            </ul>
+                    </div>                    
+                
+              
+            </aside>  
+</div>       
+        <footer>
+            <div>copyright&#169; Ulearn 2017.</div>
+            <div> Term of use.   </div>           
+            <div>
+                
+                <a href="mailto:101442551@student.swin.edu.au?Subject=Job_application" 
+                target="_top">Send Mail</a>
+            </div>
+        </footer>
+    </body>
+</html>

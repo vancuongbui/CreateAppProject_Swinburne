@@ -1,0 +1,469 @@
+/*
+Name: Van Cuong Bui
+Student ID: 101442551
+Purpose: Design a basic website with several pages to meet the requirement of
+the Assignement 1. This CSS will cover 4 mandatory pages: index.html, about.html
+apply.html and jobs.html.
+*/
+/*-------------------------------------------------------------------------------------*/
+/* general setting */
+* {
+    font-family: serif;
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.05em;
+    
+}
+/*setting pseudo element as required*/
+a:visited {
+    color: purple;
+}
+a:link {
+    color: #0000ee;
+}
+a:active {
+    color: #EE0000;
+}
+h2 {
+    color: darkcyan;
+    font-weight: bold;
+    padding: 0.5em;
+}
+h1 {
+    color: purple;
+    padding: 0.5em;
+}
+p {
+    font-size: 1.5em;
+    text-indent: 2em;
+    text-align: justify;
+    padding: 0.2em;
+}
+hr {
+    color:#6dbdd6
+}
+/*-----------------------------------------------------------------------------------*/
+/* Setting for the header and nav */
+
+#top_panel {
+    background-color: #6dbdd6;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}  
+#logo {
+    width: 15%;
+    padding: 0;
+}
+.top_panel {
+    width: 85%;
+    padding: .85em 0 .2em 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.search {
+    width: 50%;
+    text-align: center;
+    
+}
+.top_item {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    text-align: center;
+}
+.course_login {
+    width: 50%;
+    text-align: center;
+}
+
+/*This part for the menu panel and slogan */
+nav {
+    background-image: url("images/nav_background1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: #000000;
+    display: flex;  /* using Flex as an enhancement */
+    font-family: sans-serif;
+    flex-direction: row;
+    margin: .2% 0 2% 0;
+    border: 1px solid #6dbdd6;
+    
+}
+.menu {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+#slogan {
+    width:81%;
+    height: 100%;
+    text-align: center;
+    padding: 25%;
+    font-size: 250%;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    background-color: #6dbdd6;
+    margin: 0;
+    width: 100%;
+    padding: .3em 0 .3em 0%;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+.hover:hover {
+    background-color: #67CF67;
+    border: 1px solid black;
+}
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for index.html page only */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: none;  
+    
+}
+.main_container {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    border: 1px solid #6dbdd6;
+}
+.index_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.main_container div {
+    background-color: #dddddd;
+    padding: 0.2em;
+    margin: 0.5em;
+    border-radius: 5px;
+
+}
+.index_item video {
+    width: 100%;
+}
+.index_item audio {
+    width: 100%;
+    
+}
+#img_experience {
+    width: 100%;
+    border: 1px solid black;
+}
+#img_learning {
+    width: 100%;
+    border: 1px solid black;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for apply.html page only */
+.apply_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  /* fit the whole main_contain */
+    overflow: auto;
+    border: none;
+    background-color: #FFFFFF;
+    margin: 0.2%;
+    padding: 1em;
+}
+
+.apply_container ul {
+    list-style: square;
+    text-align: left;
+}
+.apply_container ul ul,p {
+    list-style: circle;
+    font-size: 1em;
+}
+/* set font-sie for the whole form */
+form {
+    font-size: 105%;
+    background-color: lightgray;
+    
+}
+form input {
+    font-size: 100%;
+}
+
+/* format for personal form */
+.personal_container {
+    display: flex;
+    flex-direction: column;
+}
+.personal_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+form h3 {
+    padding-bottom: 0.5em;
+}
+
+/* format for address form */
+.form_item {
+    width: 50%;
+    float: left;
+    }
+/* format for skill list area */
+.skills {
+    width: 50%;
+    float: left;
+    }
+textarea {
+    clear: both;
+    width: 100%;
+    margin: 0.5em 0 0 2em;
+}
+.buttons {
+    width: 100px;
+    height: 30px;
+    margin: 1em;
+    font-size: 1em;
+    background-color: #6dbdd6;
+}
+.submit {
+    clear: both;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for jobs.html page only */
+#job_list {
+    padding-left: 2em;
+}
+#job_list a {
+    display: block;
+    width: 30%;
+    float: left;  
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+/* the following rule used Pseudo element as required */
+#job_list a::first-letter {
+    color: purple;
+}
+.jobs_item {
+    background-color: lightgray;
+    margin: 0;
+    padding: .5em .5em .5em 2em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.jobs_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    overflow: auto;
+    background-color: #FFFFFF;
+    margin: 0.2% 0 0.2% 0.2%;
+}
+
+.jobs_container ul {
+    list-style: square;
+    text-align: left;
+}
+.jobs_container ul ul,p {
+    list-style: circle;
+    font-size: 0.75em;
+}
+/* setting font for h1 as required */
+#h1_font h1 {
+    font: normal normal 105% arial, sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for apply.html page only */
+.about_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    overflow: auto;
+    background-color: #FFFFFF;
+    margin: 0.2%;
+    font: italic normal 1.1em arial, sans-serif;  
+}
+.about_item{
+    background-color: lightgray; 
+    margin: 0.5em;
+    padding: .5em 1em .5em 2em;     
+}
+.about_item p {
+    font-size: 1.05em;
+}
+.about_item table, th, td {
+    font-size: .9em;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+.about_item table {
+    margin-bottom: 1em;
+}
+.about_item dt,dd {
+    display: inline;
+}
+.information {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+#personal_detail {
+    width: 60%;
+    font-size: .9em;
+    line-height: 1.6em;
+}
+#personal_photo {
+    width: 40%;
+    text-align: center;
+}
+/* set border for the photo */
+figure {
+    border: 1px double black;
+    padding: 0;
+}
+.profile {
+    font-size: .7em;
+}
+.key_profile {
+    font-weight: bold;
+}
+/*-------------------------------------------------------------------------------------*/
+/*This part is the format for aside only */
+.asideContainer {
+    display: flex;
+    width: 25%; /* setting the aside's width 25% as required */
+    border: 1px solid #6dbdd6;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0.2% 0.2% 0.2% 0%;
+    font-size: 125%;
+    color: darkblue;  
+    
+}
+.asideContainer h2 {
+    color: purple;
+    font-weight: bold;
+}
+
+.aside_item {
+    
+    width: 100%;
+    padding: 1em 0.2em 1em 0.2em;
+    text-align: left;
+    background-color: #FFFFFF;   
+     
+}
+.aside_item ul {
+    list-style: square;
+    margin: 0.5em;
+    padding: 0.2em;
+    line-height: 1.5em;
+    text-align: left;    
+}
+.aside_item audio {
+    width: 100%;
+}
+
+.aside_item ol {
+    text-align: left;
+    padding-left: 2em;
+    line-height: 1.5em;
+}
+.aside_item ol, ul, il {
+    color: darkblue;
+}
+/*------------------------------------------------------------------------------------*/
+/*This part for the footer only */
+footer {
+    background-color: #6dbdd6;
+    width: 100%;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: row;
+    }
+footer div {
+    width: 33%;
+    text-align: center;
+    font-size: 110%;
+    
+}
+
+/* setting for responsive with mobile devices*/
+@media only screen and (max-width: 720px) {
+/*redesign the layout as one column only for all pages */
+* {
+    font-size: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.main_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*special setting for index page*/
+}
+.index_container {
+    width: 100%;
+}
+.asideContainer {
+    width: 100%;
+}
+/*redesign the top_panel part (logo, search, courses and login)*/
+.top_panel {
+    display: flex;
+    flex-direction: column;
+}
+/* resize of search box*/
+.search {
+    width: 100%;
+    text-align: right;
+    padding-right: 1%;
+
+}
+.top_item {
+    width: 100%;
+}
+.course_login {
+    text-align: center;
+}
+
+/*resize the menu and nav background.*/
+.menu {
+    width: 32%;
+    }
+.menu a {
+    padding: .1% 0 .1% 0;
+}
+nav {
+    height: 220px;
+}
+#slogan {
+    width: 65%;
+    font-size: 1.5em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer div {
+    width: 100%;
+    
+}
+}

@@ -1,0 +1,325 @@
+/*
+Name: Van Cuong Bui
+Student ID: 101442551
+*/
+/*-------------------------------------------------------------------------------------*/
+/* general setting */
+* {
+    font-family: serif;
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+h2 {
+    color: darkcyan;
+    font-weight: bold;
+    padding: 0.5em;
+}
+h1 {
+    color: purple;
+    padding: 0.5em;
+}
+p {
+    font-size: 1.5em;
+    text-indent: 2em;
+    text-align: justify;
+    padding: 0.2em;
+}
+/*-----------------------------------------------------------------------------------*/
+/* Setting for the header and nav */
+header{
+    color: #FFFFFF;
+    font-size: 150%;
+     
+}
+
+.header {
+    font-size: 1.2em;
+}
+#search {
+    font-size: 1em;
+    width: 50%;
+    
+}
+
+
+#header_background {
+    background-color: #6dbdd6;
+    display: block;
+    margin: 0;
+}
+/*This part for the menu panel and slogan */
+nav {
+    background-image: url("images/nav_background1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: -webkit-flex;
+    display: flex;
+    color: #000000;
+    font-family: sans-serif;
+    flex-direction: row;
+    margin: .2% 0 2% 0;
+    
+}
+.menu {
+    width: 13%;
+    float: left;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.slogan {
+    width:84%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 25%;
+    font-size: 150%;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    background-color: #6dbdd6;
+    margin: none;
+    width: 100%;
+    padding: 0.6%;
+    border: 1px solid black;
+    text-align: center;
+}
+.hover:hover {
+    background-color: #67CF67;
+    border: 1px solid black;
+}
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for index.html page only */
+
+.index_container {
+    display: -webkit-flex;
+    display: flex;
+    width: 36.8%;
+    height: 1300px;
+    border: none;
+    
+    flex-direction: column;
+    float: left;
+    
+}
+.index_container div {
+    background-color: #dddddd;
+    padding: 0.2em;
+    margin: 0.5em;
+    border-radius: 5px;
+
+}
+.index_item video {
+    width: 100%;
+}
+.index_item audio {
+    width: 100%;
+    
+}
+#img_experience {
+    width: 100%;
+    border: 1px solid black;
+}
+#img_learning {
+    width: 100%;
+    border: 1px solid black;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for apply.html page only */
+.apply_container {
+    display: -webkit-flex;
+    display: flex;
+    width: 73.9%;  
+    height: 1300px; 
+    border: none;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    float: left;
+    margin: 0.2%;
+    padding-left: 2em;
+}
+
+.apply_container ul {
+    list-style: square;
+    text-align: left;
+}
+.apply_container ul ul,p {
+    list-style: circle;
+    font-size: 1em;
+}
+/* set font-sie for the whole form */
+form {
+    font-size: 105%;
+    background-color: lightgray;
+    margin: 1em 1em 1em 0em;
+    }
+form input {
+    font-size: 100%;
+}
+
+/* format for personal form */
+.personal {
+    width: 50%;
+    float: left;
+    padding: 0.5em;
+}
+.personal label {
+    width: 25%;
+    text-align: left;
+    padding: 0.5em;
+}
+.personal .radio {
+    width: 20%;
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 1em;
+}
+
+/* format for address form */
+.address {
+    width: 50%;
+    float: left;
+    padding: 0.5em
+}
+/* format for skill list area */
+.skills {
+    width: 50%;
+    float: left;
+    padding: 0.5em;
+}
+textarea {
+    width: 100%;
+    margin: 0.5em 0 0 2em;
+}
+#buttons {
+    width: 100px;
+    height: 30px;
+    margin: 1em;
+    font-size: 1.2em;
+    background-color: #6dbdd6;
+}
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for jobs.html page only */
+#job_list {
+    padding-left: 2em;
+}
+.jobs_item {
+    background-color: lightgray;
+    margin: 0;
+    padding: .5em .5em .5em 2em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.jobs_container1 {
+    display: -webkit-flex;
+    display: flex;
+    width: 73.8%;  
+        
+    background-color: #FFFFFF;
+    flex-direction: column;
+    float: left;
+    margin: 0.2%;
+    overflow: auto;
+}
+
+.jobs_container1 ul {
+    list-style: square;
+    text-align: left;
+}
+.jobs_container1 ul ul,p {
+    list-style: circle;
+    font-size: 0.75em;
+}
+.jobs_container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 73.8%;  
+    border: none;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    clear: both;
+    float: left;
+    margin: 0.2%;
+    overflow: auto;
+}
+.jobs_container2 ul {
+    list-style: square; 
+    text-align: left;
+}
+.jobs_container2 ul ul,p {
+    list-style: circle;
+    font-size: 0.75em;
+}
+/*-------------------------------------------------------------------------------------*/
+/*The following rules are set for apply.html page only */
+.about_container {
+
+}
+/*-------------------------------------------------------------------------------------*/
+/*This part is the format for aside only */
+.asideContainer {
+    display: -webkit-flex;
+    display: flex;
+    width: 25%;
+    height: 1300px;
+    
+    background-color: #FFFFFF;
+    flex-direction: column;
+    
+    float: right;
+    margin: 0.2%;
+}
+.asideContainer h2 {
+    color: purple;
+    font-weight: bold;
+}
+
+.aside_item {
+    
+    width: 100%;
+    padding: 0.2em;
+    text-align: center;
+    background-color: #FFFFFF;
+      
+}
+.aside_item audio {
+    width: 100%;
+}
+
+ul {
+    list-style: square;
+    margin: 0.5em;
+    padding: 0.2em;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+ol {
+    text-align: left;
+    padding-left: 2em;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+/*------------------------------------------------------------------------------------*/
+/*This part for the footer only */
+footer {
+    background-color: #6dbdd6;
+    clear: both;
+    float: left;
+    width: 100%;
+    padding-left: 1em;
+    }
+footer p {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    
+}
